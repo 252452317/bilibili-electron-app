@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BewlyBewly Electron App</title>
+</head>
+<body>
+    <webview id="bilibili-webview" src="https://www.bilibili.com" style="width:100%; height:100vh;"></webview>
+    <script>
+        const webview = document.getElementById('bilibili-webview');
+        webview.addEventListener('dom-ready', () => {
+            // 这里可以添加加载插件的逻辑
+        });
+    </script>
+</body>
+</html>
